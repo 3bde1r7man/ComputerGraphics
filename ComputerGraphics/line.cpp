@@ -1,7 +1,10 @@
+#include "Header.h"
 
-
-#include <Windows.h>
-#include <math.h>
+/*
+Date : 1 - 3 - 2024
+Author : Abderhman Mostafa
+Description : this is the Line drawing file using DDA algorithm
+*/
 
 void swap(int& x1, int& x2, int& y1, int& y2)
 {
@@ -59,7 +62,7 @@ void DrawLine(HDC hdc, int x1, int y1, int x2, int y2)
 	}
 }
 
-LRESULT WINAPI WndProc(HWND hwnd, UINT m, WPARAM wp, LPARAM lp)
+LRESULT WINAPI Line(HWND hwnd, UINT m, WPARAM wp, LPARAM lp)
 {
 	HDC hdc;
 	static int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
@@ -91,32 +94,6 @@ LRESULT WINAPI WndProc(HWND hwnd, UINT m, WPARAM wp, LPARAM lp)
 		PostQuitMessage(0);
 		break;
 	default: return DefWindowProc(hwnd, m, wp, lp);
-	}
-	return 0;
-}
-
-int APIENTRY WinMain(HINSTANCE hi, HINSTANCE pi, LPSTR c, int ns)
-{
-	WNDCLASS wc;
-	wc.cbClsExtra = 0;
-	wc.cbWndExtra = 0;
-	wc.hbrBackground = (HBRUSH)GetStockObject(LTGRAY_BRUSH);
-	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
-	wc.hIcon = LoadIcon(NULL, IDI_WINLOGO);
-	wc.hInstance = hi;
-	wc.lpfnWndProc = WndProc;
-	wc.lpszClassName = L"MyClass";
-	wc.lpszMenuName = NULL;
-	wc.style = CS_HREDRAW | CS_VREDRAW;
-	RegisterClass(&wc);
-	HWND hwnd = CreateWindow(L"MyClass", L"Hello World", WS_OVERLAPPEDWINDOW, 0, 0, 600, 400, NULL, NULL, hi, 0);
-	ShowWindow(hwnd, ns);
-	UpdateWindow(hwnd);
-	MSG msg;
-	while (GetMessage(&msg, NULL, 0, 0) > 0)
-	{
-		TranslateMessage(&msg);
-		DispatchMessage(&msg);
 	}
 	return 0;
 }
