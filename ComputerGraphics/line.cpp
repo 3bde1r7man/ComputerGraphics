@@ -16,7 +16,7 @@ void swap(int& x1, int& x2, int& y1, int& y2)
 	y2 = temp;
 }
 
-void DrawLine(HDC hdc, int x1, int y1, int x2, int y2)
+void drawLine(HDC hdc, int x1, int y1, int x2, int y2)
 {
 	int dx, dy;
 	dx = x2 - x1;
@@ -82,7 +82,7 @@ LRESULT WINAPI Line(HWND hwnd, UINT m, WPARAM wp, LPARAM lp)
 		{
 			x2 = LOWORD(lp);
 			y2 = HIWORD(lp);
-			DrawLine(hdc, x1, y1, x2, y2);
+			drawLine(hdc, x1, y1, x2, y2);
 			mouseClicks = 0;
 		}
 		ReleaseDC(hwnd, hdc);

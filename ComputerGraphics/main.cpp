@@ -17,7 +17,7 @@ int APIENTRY WinMain(HINSTANCE hi, HINSTANCE pi, LPSTR c, int ns)
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hIcon = LoadIcon(NULL, IDI_WINLOGO);
 	wc.hInstance = hi;
-	wc.lpfnWndProc = Line; // this is changing when we want to change the function
+	wc.lpfnWndProc = Circle; // this is changing when we want to change the function
 	wc.lpszClassName = L"MyClass";
 	wc.lpszMenuName = NULL;
 	wc.style = CS_HREDRAW | CS_VREDRAW;
