@@ -10,21 +10,26 @@ void draw8points(HDC hdc, int x, int y, int xc, int yc) {
 	SetPixel(hdc, xc + y, yc - x, RGB(0, 0, 0));
 	SetPixel(hdc, xc - y, yc - x, RGB(0, 0, 0));
 }
-
-void drawCircle(HDC hdc, int x, int y, int r) {
-	int xc = x, yc = y;
-
-	double dtheata = 1.0 / r;
-	// calculate the sine and cosine of the angle only once
-	double c = cos(dtheata); 
-	double s = sin(dtheata);
-	double x1 = r, y1 = 0;
-	draw8points(hdc, x1, y1, xc, yc);
-	while (x1 > y1) {
-		double x2 = x1 * c - y1 * s;
-		y1 = x1 * s + y1 * c;
-		x1 = x2;
-		draw8points(hdc, round(x1), round(y1), xc, yc);
+// draw circle using bresenham's 2nd order algorithm
+void drawCircle(HDC hdc, int xc, int yc, int r) {
+	
+	int d = 1 - r;
+	int x = 0, y = r;
+	draw8points(hdc, x, y, xc, yc);
+	int ch1 = 3, ch2 = 5 - 2 * r;
+	while (x < y) {
+		if (d < 0) {
+			d += ch1;
+			ch2 += 2;
+		}
+		else {
+			d += ch2;
+			ch2 += 4;
+			y--;
+		}
+		ch1 += 2;
+		x++;
+		draw8points(hdc, x, y, xc, yc);
 	}
 }
 
