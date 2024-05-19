@@ -2,8 +2,11 @@
 #include <Windows.h>
 #include <math.h>
 
-// Path: ComputerGraphics/line.cpp
-LRESULT WINAPI Line(HWND hwnd, UINT m, WPARAM wp, LPARAM lp);
+
+void swap(int& x1, int& x2, int& y1, int& y2);
+
+// Path: ComputerGraphics/MidpointLine.cpp
+LRESULT WINAPI MidpointLine(HWND hwnd, UINT m, WPARAM wp, LPARAM lp);
 
 // Path: ComputerGraphics/circle.cpp
 LRESULT WINAPI Circle(HWND hwnd, UINT m, WPARAM wp, LPARAM lp);

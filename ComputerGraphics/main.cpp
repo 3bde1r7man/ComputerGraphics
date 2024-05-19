@@ -4,7 +4,7 @@
 /*
 Date : 1 - 3 - 2024
 Author : Abderhman Mostafa
-Description : this is the main file
+Description : main file to start the program 
 */
 
 
@@ -17,7 +17,7 @@ int APIENTRY WinMain(HINSTANCE hi, HINSTANCE pi, LPSTR c, int ns)
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hIcon = LoadIcon(NULL, IDI_WINLOGO);
 	wc.hInstance = hi;
-	wc.lpfnWndProc = Circle; // this is changing when we want to change the function
+	wc.lpfnWndProc = MidpointLine; // this is changing when we want to change the function
 	wc.lpszClassName = L"MyClass";
 	wc.lpszMenuName = NULL;
 	wc.style = CS_HREDRAW | CS_VREDRAW;

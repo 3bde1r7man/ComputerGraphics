@@ -129,8 +129,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="circle.cpp" />
-    <ClCompile Include="line.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MidpointLine.cpp" />
+    <ClCompile Include="NaiveLine.cpp" />
+    <ClCompile Include="SimpleDDA.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

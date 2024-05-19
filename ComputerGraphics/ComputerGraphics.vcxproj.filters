@@ -13,16 +13,28 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Line">
+      <UniqueIdentifier>{cb8f8185-6b32-450c-915b-17c4bb582ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Circle">
+      <UniqueIdentifier>{52fac947-85f3-40c9-9610-fc2c8b100f38}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="line.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="NaiveLine.cpp">
+      <Filter>Source Files\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="MidpointLine.cpp">
+      <Filter>Source Files\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleDDA.cpp">
+      <Filter>Source Files\Line</Filter>
     </ClCompile>
     <ClCompile Include="circle.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Circle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
