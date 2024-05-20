@@ -17,12 +17,12 @@ int APIENTRY WinMain(HINSTANCE hi, HINSTANCE pi, LPSTR c, int ns)
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hIcon = LoadIcon(NULL, IDI_WINLOGO);
 	wc.hInstance = hi;
-	wc.lpfnWndProc = MidpointLine; // this is changing when we want to change the function
+	wc.lpfnWndProc = Circle; // this is changing when we want to change the function
 	wc.lpszClassName = L"MyClass";
 	wc.lpszMenuName = NULL;
 	wc.style = CS_HREDRAW | CS_VREDRAW;
 	RegisterClass(&wc);
-	HWND hwnd = CreateWindow(L"MyClass", L"Computer Graphics", WS_OVERLAPPEDWINDOW, 0, 0, 600, 400, NULL, NULL, hi, 0);
+	HWND hwnd = CreateWindow(L"MyClass", L"Computer Graphics", WS_OVERLAPPEDWINDOW, 0, 0, 1000, 800, NULL, NULL, hi, 0);
 	ShowWindow(hwnd, ns);
 	UpdateWindow(hwnd);
 	MSG msg;

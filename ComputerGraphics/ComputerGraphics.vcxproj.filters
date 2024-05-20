@@ -33,7 +33,19 @@
     <ClCompile Include="SimpleDDA.cpp">
       <Filter>Source Files\Line</Filter>
     </ClCompile>
-    <ClCompile Include="circle.cpp">
+    <ClCompile Include="Circle.cpp">
+      <Filter>Source Files\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleDirect.cpp">
+      <Filter>Source Files\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Source Files\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="CirclePolar.cpp">
+      <Filter>Source Files\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleBresenham.cpp">
       <Filter>Source Files\Circle</Filter>
     </ClCompile>
   </ItemGroup>

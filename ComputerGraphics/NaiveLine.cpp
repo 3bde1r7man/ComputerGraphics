@@ -1,13 +1,5 @@
 #include "Header.h"
 
-void swap(int& x1, int& x2, int& y1, int& y2) {
-	int temp = x1;
-	x1 = x2;
-	x2 = temp;
-	temp = y1;
-	y1 = y2;
-	y2 = temp;
-}
 
 void NaiveLine(HDC hdc, int Xs, int Ys, int Xe, int Ye) {
 	int dx = Xe - Xs;
