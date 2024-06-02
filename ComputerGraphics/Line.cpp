@@ -30,7 +30,7 @@ LRESULT WINAPI Line(HWND hwnd, UINT m, WPARAM wp, LPARAM lp)
 			x2 = LOWORD(lp);
 			y2 = HIWORD(lp);
 			// call fun
-			MidpointLine(hdc, x1, y1, x2, y2);
+			BresenhamLine(hdc, x1, y1, x2, y2);
 			mouseClicks = 0;
 		}
 		ReleaseDC(hwnd, hdc);

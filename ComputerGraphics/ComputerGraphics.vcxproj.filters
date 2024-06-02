@@ -27,7 +27,7 @@
     <ClCompile Include="NaiveLine.cpp">
       <Filter>Source Files\Line</Filter>
     </ClCompile>
-    <ClCompile Include="MidpointLine.cpp">
+    <ClCompile Include="BresenhamLine.cpp">
       <Filter>Source Files\Line</Filter>
     </ClCompile>
     <ClCompile Include="SimpleDDA.cpp">

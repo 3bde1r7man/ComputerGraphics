@@ -134,7 +134,7 @@
     <ClCompile Include="CirclePolar.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MidpointLine.cpp" />
+    <ClCompile Include="BresenhamLine.cpp" />
     <ClCompile Include="NaiveLine.cpp" />
     <ClCompile Include="SimpleDDA.cpp" />
   </ItemGroup>
