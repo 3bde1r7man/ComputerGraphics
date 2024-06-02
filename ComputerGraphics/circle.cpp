@@ -22,7 +22,7 @@ LRESULT WINAPI Circle(HWND hwnd, UINT m, WPARAM wp, LPARAM lp)
 		hdc = GetDC(hwnd);
 		x = LOWORD(lp);
 		y = HIWORD(lp);
-		CirclePolar(hdc, x, y, 200);
+		CircleBresenham(hdc, x, y, 200);
 		ReleaseDC(hwnd, hdc);
 		break;
 	case WM_CLOSE:

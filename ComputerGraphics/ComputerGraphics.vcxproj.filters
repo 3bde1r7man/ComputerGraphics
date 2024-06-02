@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Circle">
       <UniqueIdentifier>{52fac947-85f3-40c9-9610-fc2c8b100f38}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cohen-Sutherland">
+      <UniqueIdentifier>{818336c7-da40-4a7f-9b1a-263068da5c04}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -47,6 +50,9 @@
     </ClCompile>
     <ClCompile Include="CircleBresenham.cpp">
       <Filter>Source Files\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Cohen-Sutherland.cpp">
+      <Filter>Source Files\Cohen-Sutherland</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

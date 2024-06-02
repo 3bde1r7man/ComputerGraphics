@@ -132,6 +132,7 @@
     <ClCompile Include="CircleBresenham.cpp" />
     <ClCompile Include="CircleDirect.cpp" />
     <ClCompile Include="CirclePolar.cpp" />
+    <ClCompile Include="Cohen-Sutherland.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="BresenhamLine.cpp" />
