@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Cohen-Sutherland">
       <UniqueIdentifier>{818336c7-da40-4a7f-9b1a-263068da5c04}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Filling">
+      <UniqueIdentifier>{d43cddd5-6352-47e3-8893-3575b6696f56}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -53,6 +56,9 @@
     </ClCompile>
     <ClCompile Include="Cohen-Sutherland.cpp">
       <Filter>Source Files\Cohen-Sutherland</Filter>
+    </ClCompile>
+    <ClCompile Include="FloodFill.cpp">
+      <Filter>Source Files\Filling</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
