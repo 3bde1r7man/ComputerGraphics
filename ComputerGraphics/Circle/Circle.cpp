@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 void draw8points(HDC hdc, int x, int y, int xc, int yc) {
 	SetPixel(hdc, xc + x, yc + y, RGB(0, 0, 0));

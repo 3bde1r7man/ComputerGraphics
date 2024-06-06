@@ -1,5 +1,4 @@
-#include "Header.h"
-
+#include "../Header.h"
 
 void CircleDirect(HDC hdc, int xc, int yc, int R) {
 	int x = 0, y = R;

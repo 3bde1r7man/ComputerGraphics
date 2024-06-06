@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 void SimpleDDA(HDC hdc, int Xs, int Ys, int Xe, int Ye) {
     int dx = Xe - Xs;

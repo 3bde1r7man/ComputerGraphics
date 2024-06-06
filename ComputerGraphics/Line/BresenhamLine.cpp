@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 void drawLineLow(HDC hdc, int x1, int y1, int x2, int y2) {
 	int dx = x2 - x1, dy = y2 - y1;

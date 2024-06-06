@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 void CirclePolar(HDC hdc, int xc, int yc, int R) {
 	int x = R, y = 0;

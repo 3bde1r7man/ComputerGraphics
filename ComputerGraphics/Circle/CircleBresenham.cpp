@@ -1,5 +1,4 @@
-#include "Header.h"
-
+#include "../Header.h"
 // draw circle using bresenham's 2nd order algorithm
 void CircleBresenham(HDC hdc, int xc, int yc, int r) {
 

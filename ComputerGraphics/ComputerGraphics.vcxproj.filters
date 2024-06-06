@@ -30,35 +30,35 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NaiveLine.cpp">
-      <Filter>Source Files\Line</Filter>
-    </ClCompile>
-    <ClCompile Include="BresenhamLine.cpp">
-      <Filter>Source Files\Line</Filter>
-    </ClCompile>
-    <ClCompile Include="SimpleDDA.cpp">
-      <Filter>Source Files\Line</Filter>
-    </ClCompile>
-    <ClCompile Include="Circle.cpp">
+    <ClCompile Include="Circle\Circle.cpp">
       <Filter>Source Files\Circle</Filter>
     </ClCompile>
-    <ClCompile Include="CircleDirect.cpp">
+    <ClCompile Include="Circle\CircleBresenham.cpp">
       <Filter>Source Files\Circle</Filter>
     </ClCompile>
-    <ClCompile Include="Line.cpp">
-      <Filter>Source Files\Line</Filter>
-    </ClCompile>
-    <ClCompile Include="CirclePolar.cpp">
+    <ClCompile Include="Circle\CircleDirect.cpp">
       <Filter>Source Files\Circle</Filter>
     </ClCompile>
-    <ClCompile Include="CircleBresenham.cpp">
+    <ClCompile Include="Circle\CirclePolar.cpp">
       <Filter>Source Files\Circle</Filter>
     </ClCompile>
-    <ClCompile Include="Cohen-Sutherland.cpp">
+    <ClCompile Include="Cohen_Sutherland\Cohen-Sutherland.cpp">
       <Filter>Source Files\Cohen-Sutherland</Filter>
     </ClCompile>
-    <ClCompile Include="FloodFill.cpp">
+    <ClCompile Include="Filling\FloodFill.cpp">
       <Filter>Source Files\Filling</Filter>
+    </ClCompile>
+    <ClCompile Include="Line\BresenhamLine.cpp">
+      <Filter>Source Files\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="Line\Line.cpp">
+      <Filter>Source Files\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="Line\NaiveLine.cpp">
+      <Filter>Source Files\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="Line\SimpleDDA.cpp">
+      <Filter>Source Files\Line</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

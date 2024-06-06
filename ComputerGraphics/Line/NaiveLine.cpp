@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "../Header.h"
 
 
 void NaiveLine(HDC hdc, int Xs, int Ys, int Xe, int Ye) {

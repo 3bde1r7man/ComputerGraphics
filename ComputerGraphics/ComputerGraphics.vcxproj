@@ -128,17 +128,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="CircleBresenham.cpp" />
-    <ClCompile Include="CircleDirect.cpp" />
-    <ClCompile Include="CirclePolar.cpp" />
-    <ClCompile Include="Cohen-Sutherland.cpp" />
-    <ClCompile Include="FloodFill.cpp" />
-    <ClCompile Include="Line.cpp" />
+    <ClCompile Include="Circle\Circle.cpp" />
+    <ClCompile Include="Circle\CircleBresenham.cpp" />
+    <ClCompile Include="Circle\CircleDirect.cpp" />
+    <ClCompile Include="Circle\CirclePolar.cpp" />
+    <ClCompile Include="Cohen_Sutherland\Cohen-Sutherland.cpp" />
+    <ClCompile Include="Filling\FloodFill.cpp" />
+    <ClCompile Include="Line\BresenhamLine.cpp" />
+    <ClCompile Include="Line\Line.cpp" />
+    <ClCompile Include="Line\NaiveLine.cpp" />
+    <ClCompile Include="Line\SimpleDDA.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="BresenhamLine.cpp" />
-    <ClCompile Include="NaiveLine.cpp" />
-    <ClCompile Include="SimpleDDA.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
